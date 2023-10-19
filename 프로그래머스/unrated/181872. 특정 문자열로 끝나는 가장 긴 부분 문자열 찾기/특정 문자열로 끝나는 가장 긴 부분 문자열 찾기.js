@@ -1,5 +1,3 @@
 function solution(myString, pat) {
-    let num = myString.lastIndexOf(pat) + pat.length;
-    myString = myString.split("").slice(0, num);
-    return myString.join("");
+    return myString.split("").slice(0, myString.lastIndexOf(pat) + pat.length).join("");
 }
