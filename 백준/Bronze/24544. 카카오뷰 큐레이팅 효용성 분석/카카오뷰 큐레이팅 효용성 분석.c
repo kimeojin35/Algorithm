@@ -4,8 +4,8 @@
 int main() {
 	int n, m;
 	int h1 = 0, h2 = 0;
-	int a1[100000];
-	int a2[100000];
+	int a1[1000];
+	int a2[1000];
 	scanf("%d", &n);
 	for (int i = 0; i < n; i++) {
 		scanf("%d", &m);
