@@ -15,11 +15,9 @@ for (let i = 0; i < Number(num); i++) {
     const maxArr = arr.map((item) => item.level);
     const max = maxArr.indexOf(Math.max(...maxArr));
     arr = [...arr.slice(max, n), ...arr.slice(0, max)];
-    if (arr[0].level >= arr[max].level) {
-      const now = arr.shift();
-      count++;
-      if (now.seq == m) break;
-    }
+    const now = arr.shift();
+    count++;
+    if (now.seq == m) break;
   }
   console.log(count);
 }
